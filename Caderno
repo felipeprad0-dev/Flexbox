@@ -1,0 +1,35 @@
+Sempre que quisermos usar o flexbox e conseguirmos isso, devemos declarar o display: flex na div ou em volta do elemento que queremos alinhar.
+
+Sempre alinhará os itens horizontalmente.
+
+A propriedade padrão que está alinhando os itens é a flex-direction, e podemos trocar o valor dela. Seus principais valores é o row e column.
+
+Quando estamos utilizando o flex-direction: row, o align-items vai sempre alinhar o nosso conteúdo verticalmente e o justify-content irá alinhar horizontalmente.
+
+Quando estamos utilizando o flex-direction: row, o align-items vai sempre alinhar o nosso conteúdo horizontalmente e o justify-content irá alinhar verticalmente.
+
+No flexbox, tudo se baseia na flex-direction.
+
+O valor padrão do align-items e justify-content é flex-start, o que quer dizer que queremos alinhar no começo sempre.
+
+flex-grow dá permissão ao elemento ser redimensionado para caber no container dele. valor padrão 0 e altera pra 1.
+
+flex-shrink por padrão o valor é 1, o que permite os elementos se espremerem para caber na tela. Se alterado o valor para 0, o(s) elementos irão ficar espaçosos, podendo até criar a barra de rolagem horizontal. Se alterado para 2, os elementos irão espremer o conteúdo dentro do elemento. Por exemplo: uma caixa escrita "I Think" ficaria "   I   "
+                            Think        
+
+flex é a soma do flex-grow + flex-shrink.
+
+A propriedade flex-wrap, quando colocada no container e colocando o valor wrap, irá habilitar a quebra de linha.
+
+O align-content alinha os elementos quando eles estão em mais de uma linha quebrada.
+
+
+Abaixo fará um "reset" nos elementos para eles não terem nenhum espaçamento nativo.
+O box-sizing: border-box fará com que o padding não aumente o tamanho da width.
+Ou seja, se tivessemos width: 300px e colocassemos padding 20px sem o box-sizing: border-box, aumentaria o valor de width para 340px. Com o box-sizing: border-box, é como se o valor de width passasse a valer 260px.
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
